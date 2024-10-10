@@ -91,7 +91,7 @@ function extract_most_clear_image(file_path)
     
                 [min_va, min_idx] = min(blur_score_list);
                 % write image
-                imwrite(imread(file_name_list{min_idx}), [write_path 'tile_' int2str(counter) '.tif'])
+                imwrite(imread(file_name_list{min_idx}), [write_path 'tile_' int2str(counter) '.tif'], 'jpg', 'Quality', 95)
                 counter = counter + 1;
                 
                 % reset score
@@ -123,5 +123,5 @@ function extract_most_clear_image(file_path)
     blur_score_list
     % write the last one
      [min_va, min_idx] = min(blur_score_list);
-     imwrite(imread(file_name_list{min_idx}), [write_path 'tile_' int2str(counter) '.tif'])
+     imwrite(imread(file_name_list{min_idx}), [write_path 'tile_' int2str(counter) '.tif'], 'jpg', 'Quality', 95)
 end

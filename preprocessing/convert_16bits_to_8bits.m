@@ -46,6 +46,6 @@ function convert_16bits_to_8bits(file_path)
         raw_image = double(imread(current_filename));
         normed_img = (raw_image - global_min) ./ norm_max;
         new_file_path = [write_path files_sorted(i).name];
-        imwrite(normed_img, new_file_path);
+        imwrite(normed_img, new_file_path, 'jpg', 'Quality', 95);
     end
 end
