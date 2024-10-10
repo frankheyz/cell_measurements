@@ -21,7 +21,7 @@ pre-processing code for cell measurements
 - 结果保存于`path/to/raw/data_8bits`文件夹中
 - 提取每个视场中最清晰的图像
 ```matlab
-    extract_most_clear_image(`path/to/raw/data_8bits`)
+    extract_most_clear_image('path/to/raw/data_8bits')
 ```
 - 结果保存于`path/to/raw/data_8bits_most_clear`文件夹中
 
