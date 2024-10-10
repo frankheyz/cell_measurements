@@ -24,3 +24,10 @@ pre-processing code for cell measurements
     extract_most_clear_image(`path/to/raw/data_8bits`)
 ```
 - 结果保存于`path/to/raw/data_8bits_most_clear`文件夹中
+
+##  其他
+
+- 处理完毕的图像，可以使用ImageJ中的拼接功能进行大图拼接
+  - 打开ImageJ
+  - Plugins -> Stitching -> Grid/Collection stitching
+  - 根据扫描方式及XY格子数量进行拼接
